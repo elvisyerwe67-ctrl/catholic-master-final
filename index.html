@@ -1,25 +1,141 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Catholic Schools App - PNG</title><meta name="theme-color" content="#0a1f4a"><style>
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;font-family:Arial;background:#f1f5f9;color:#0f172a}
-.app{max-width:480px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 30px rgba(0,0,0,.15)}
-@media(min-width:600px){.app{max-width:600px;border-radius:16px;margin:20px auto;border:3px solid #0a1f4a}}
-.top{background:#0a1f4a;color:#fff;padding:14px;display:flex;align-items:center;gap:10px}
-.icon{width:50px;height:50px;background:#d4af37;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:26px}
-.bigbtn{width:100%;padding:18px;border:none;border-radius:14px;font-size:18px;font-weight:bold;margin:8px 0;cursor:pointer;display:flex;align-items:center;gap:12px;justify-content:center}
-.b1{background:#0a1f4a;color:#fff}.b2{background:#16a34a;color:#fff}.b3{background:#0ea5e9;color:#fff}.b4{background:#f59e0b;color:#000}
-.card{margin:12px;background:#fff;border-radius:14px;padding:14px;border:2px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Catholic Agency Real App PNG</title><meta name="theme-color" content="#0a1f4a"><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial;background:#e8eef8}
+.app{max-width:520px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 30px rgba(0,0,0,.2)}
+.top{background:#0a1f4a;color:#fff;padding:14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:9}
+.ic{width:52px;height:52px;background:#d4af37;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px}
+.bigbtn{width:100%;padding:20px;border:none;border-radius:16px;font-size:19px;font-weight:bold;margin:10px 0;cursor:pointer;display:flex;align-items:center;gap:14px;justify-content:center}
+.b1{background:#0a1f4a;color:#fff}.b2{background:#16a34a;color:#fff}.b3{background:#0ea5e9;color:#fff}.b4{background:#f59e0b;color:#000}.b5{background:#7c3aed;color:#fff}
+.card{margin:12px;background:#fff;border-radius:16px;padding:14px;border:2px solid #cbd5e1;box-shadow:0 3px 10px rgba(0,0,0,.07)}
 .step{display:none}.step.active{display:block}
-input,select{width:100%;padding:14px;border:2px solid #1565c0;border-radius:10px;font-size:16px;font-weight:bold;margin-top:4px}
-label{font-weight:bold;font-size:13px;color:#334155}
+input,select,textarea{width:100%;padding:15px;border:2.5px solid #1565c0;border-radius:12px;font-size:16px;font-weight:bold;margin-top:5px}
+textarea{height:80px}
+label{font-weight:bold;font-size:13px;color:#1e293b;margin-top:10px;display:block}
+.block{border-radius:14px;padding:14px;margin:12px;border-left:6px solid}
+.blo1{background:#eff6ff;border-left-color:#1565c0}.blo2{background:#f0fdf4;border-left-color:#16a34a}.blo3{background:#fefce8;border-left-color:#eab308}
+.badge{background:#16a34a;color:#fff;padding:5px 12px;border-radius:20px;font-size:11px}
+table{width:100%;border-collapse:collapse;font-size:12px}th{background:#0a1f4a;color:#fff;padding:10px}td{padding:8px;border:1px solid #e2e8f0}
 .row{display:flex;gap:10px}.row>div{flex:1}
-.badge{background:#16a34a;color:#fff;padding:4px 10px;border-radius:20px;font-size:11px}
-table{width:100%;border-collapse:collapse;font-size:13px}th{background:#0a1f4a;color:#fff;padding:10px}td{padding:9px;border:1px solid #e2e8f0}
-.progress{display:flex;gap:6px;margin:10px 0}.dot{flex:1;height:8px;background:#e2e8f0;border-radius:10px}.dot.on{background:#16a34a}
-.hint{background:#fef9c3;border-left:5px solid #eab308;padding:10px;border-radius:8px;font-size:12px;margin:8px 0}
+.photoBox{border:2px dashed #1565c0;border-radius:12px;padding:12px;text-align:center;background:#f8fafc}
+#preview{max-width:100%;max-height:180px;border-radius:10px;margin-top:10px;display:none}
+.progress{display:flex;gap:6px;margin:10px}.dot{flex:1;height:10px;background:#e2e8f0;border-radius:20px}.dot.on{background:#16a34a}
+@media(min-width:700px){.app{max-width:900px;border-radius:18px;margin:20px auto;border:3px solid #0a1f4a}.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}}
 </style></head><body>
 <div class="app">
-<div class="top"><div class="icon">✝️</div><div><b style="font-size:18px">Catholic Schools PNG</b><br><small>Agency Schools • Works Offline 🇵🇬 • Titles Updated</small></div></div>
+<div class="top"><div class="ic">✝️</div><div><b style="font-size:18px">Catholic Agency Schools PNG</b><br><small>REAL APP • Install & Run • Offline • v6 Final</small> <span class="badge">OFFLINE</span></div></div>
 
 <div id="home" class="step active" style="padding:14px">
-<div style="text-align:center;padding:10px"><div style="font-size:48px">🏫</div><h2 style="margin:6px 0">Welcome Boss!</h2><p style="color:#64748b;font-size:13px">Simple app for Catholic agency schools</p><span class="badge">● OFFLINE READY • NEW TITLES ADDED</span></div>
+<div style="text-align:center;padding:12px"><div style="font-size:50px">🏫</div><h2>Welcome Boss!</h2><p style="color:#64748b">Tap big button — Very easy for touch phone!</p></div>
 <div class="progress"><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div>
-<button class="bigbtn b1" onclick="go('s1')">📝 1. ADD TEACHER<br><small style="font-weight:normal;font-size:12px">Put
+<button class="bigbtn b1" onclick="go('form')">📝 ADD TEACHER<br><small style="font-weight:normal;font-size:12px">New titles: PRINC, DP, DAP, H.T etc</small></button>
+<button class="bigbtn b2" onclick="go('list')">📋 SAVED LIST <span id="cntHome">0</span><br><small style="font-weight:normal;font-size:12px">Check offline saved</small></button>
+<button class="bigbtn b5" onclick="go('photo')">📸 PHOTO → PDF / EXCEL<br><small style="font-weight:normal;font-size:12px">Upload document photo</small></button>
+<button class="bigbtn b3" onclick="ex()">📊 SEND TO OFFICE</button>
+<button class="bigbtn b4" onclick="go('help')">❓ HELP - Easy Guide</button>
+<div class="card" style="font-size:12px"><b>📱 Install as Real App:</b><br>Chrome → ⋮ → Add to Home Screen → Add → Icon appears like Facebook! Works offline in bush! 🇵🇬</div>
+</div>
+
+<div id="form" class="step" style="padding:8px">
+<button onclick="go('home')" style="background:#f1f5f9;border:1.5px solid #cbd5e1;padding:10px 18px;border-radius:30px;font-weight:bold;font-size:15px">← Home</button>
+
+<div class="block blo1">
+<b>🏫 BLOCK 1 • School Profile</b>
+<div class="row"><div><label>CODE</label><input id="code" value="66-410"></div><div><label>SCHOOL NAME</label><input id="sname" value="AMFAR PRIMARY"></div></div>
+<div class="row"><div><label>SCHOOL TYPE (Updated!)</label><select id="stype"><option>PRIMARY SCHOOL</option><option>Junior High</option><option>Secondary</option><option>TVET</option><option>Others</option></select></div><div><label>DEANERY</label><input id="deanery" value="KAVIENG DEANERY"></div></div>
+</div>
+
+<div class="block blo2">
+<b>👤 BLOCK 2 • Personal Info - NEW TITLES</b>
+<div class="row"><div><label>TITLE (NEW INITIALS!)</label><select id="title" onchange="prepareAuto()">
+<option value="PRINC">PRINC - Principal</option>
+<option value="DP">DP - Deputy Principal</option>
+<option value="DAP">DAP - Deputy Academic Principal</option>
+<option value="H.T">H.T - Head Teacher</option>
+<option value="S.T">S.T - Senior Teacher</option>
+<option value="SSM">SSM - Senior Subject Master</option>
+<option value="A/T">A/T - Assistant Teacher</option>
+</select></div><div><label>GENDER</label><select id="gen"><option>M - Male</option><option>F - Female</option></select></div></div>
+<div class="row"><div><label>SURNAME</label><input id="surname" placeholder="DAULAI"></div><div><label>GIVEN NAME</label><input id="given" placeholder="Wilfred M"></div></div>
+<div class="row"><div><label>FILE NO</label><input id="fileno" placeholder="01368920" style="background:#dcfce7"></div><div><label>NEW POS NO</label><input id="newpos" value="1090125726"></div></div>
+</div>
+
+<div class="block blo3">
+<b>📄 BLOCK 3 • A/AUTH-DEC + COMMENTS + AUTO-FILL</b>
+<small style="color:#92400e">Fill then press SUBMIT CHECK to auto-fill others!</small>
+<div class="row"><div><label>POS NO (Auto after Submit)</label><input id="posno" readonly style="background:#fef9c3"></div><div><label>ABR (Auto)</label><input id="abr" readonly style="background:#fef9c3"></div></div>
+<div class="row"><div><label>STATUS (Auto)</label><input id="status" readonly style="background:#fef9c3"></div><div><label>LEVEL</label><input id="level" value="PRIMARY"></div></div>
+<label>💬 COMMENTS (NEW!)</label><textarea id="comments" placeholder="Write comments about teacher, transfer, remote help etc..."></textarea>
+<div class="photoBox" style="margin-top:10px"><label>📸 PHOTO DOCUMENT UPLOAD (NEW!)</label><input type="file" id="photoInput" accept="image/*" capture="environment" onchange="loadPhoto(event)"><br><small>Take photo of certificate / letter / ID — will go to PDF/Excel</small><img id="preview"></div>
+
+<div style="margin-top:12px;background:#fff;padding:10px;border-radius:10px;border:2px solid #16a34a">
+<b>🔍 Auto-Fill Preview:</b><div id="lk" style="margin-top:6px;font-size:12px;font-weight:bold">Select title and file no → Press SUBMIT CHECK below</div>
+</div>
+
+<button class="bigbtn b4" onclick="doAutoFill()" style="margin-top:12px">🔄 SUBMIT CHECK - Auto Fill Now!</button>
+<button class="bigbtn b2" onclick="sv()">✅ SAVE OFFLINE - Final Save!</button>
+</div>
+
+<button class="bigbtn b1" onclick="go('home')" style="background:#fff;color:#0a1f4a;border:3px solid #0a1f4a">🏠 Back Home</button>
+</div>
+
+<div id="photo" class="step" style="padding:14px">
+<button onclick="go('home')" style="background:#f1f5f9;border:1.5px solid #cbd5e1;padding:10px 18px;border-radius:30px;font-weight:bold">← Home</button>
+<h2>📸 Photo → Excel / PDF</h2>
+<div class="card"><div class="photoBox"><input type="file" id="photoInput2" accept="image/*" onchange="loadPhoto(event)"><br><br><img id="preview2" style="max-width:100%;border-radius:10px;display:none"><div id="photoInfo" style="margin-top:10px;font-size:12px;color:#64748b">No photo yet. Upload teacher document / ID card / certificate</div></div></div>
+<div class="card"><b>Export Options:</b><br><br><button class="bigbtn b3" onclick="exportPDF()">📄 Export PDF with Photo</button><button class="bigbtn b2" onclick="ex()">📊 Export Excel CSV with Photo Name</button><small>PDF will include teacher data + photo. For sending to office or printing. Works offline!</small></div>
+</div>
+
+<div id="list" class="step" style="padding:14px">
+<button onclick="go('home')" style="background:#f1f5f9;border:1.5px solid #cbd5e1;padding:10px 18px;border-radius:30px;font-weight:bold">← Home</button>
+<h2>📋 Saved <span id="cnt">0</span></h2><input id="qs" placeholder="🔍 Search surname/file..." oninput="ft()" style="margin:8px 0">
+<div style="overflow:auto;border:2.5px solid #0a1f4a;border-radius:12px"><table><thead><tr><th>TITLE</th><th>NAME</th><th>FILE</th><th>ABR</th><th>DEL</th></tr></thead><tbody id="tb"></tbody></table></div>
+<button class="bigbtn b3" onclick="ex()">📊 Export Excel</button><button class="bigbtn b5" onclick="exportPDF()">📄 Export PDF</button>
+</div>
+
+<div id="help" class="step" style="padding:14px">
+<button onclick="go('home')" style="background:#f1f5f9;border:1.5px solid #cbd5e1;padding:10px 18px;border-radius:30px;font-weight:bold">← Home</button>
+<h2>❓ Easy Guide for Bosses</h2><div class="card" style="font-size:14px;line-height:1.7">
+1️⃣ <b>Install Real App:</b> Chrome ⋮ → Add to Home Screen → Icon like Facebook appears!<br><br>
+2️⃣ <b>Add Teacher:</b> Tap big ADD TEACHER<br>
+- Block1: School code<br>
+- Block2: Select new title: PRINC, DP, DAP, H.T, S.T, SSM, A/T<br>
+- Block3: Type comments, upload photo, then tap SUBMIT CHECK to auto-fill POS, ABR, STATUS<br>
+- Finally tap SAVE OFFLINE<br><br>
+3️⃣ <b>Photo:</b> Take photo of document — saved with teacher — goes to PDF/Excel<br><br>
+<b>Big buttons only! No small touch! For remote PNG helping vulnerable! 🇵🇬✝️</b>
+</div><button class="bigbtn b1" onclick="go('home')">🏠 I Understand</button>
+</div>
+
+</div>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob([`self.addEventListener('install',e=>{e.waitUntil(caches.open('cath-v6-final').then(c=>c.addAll(['./'])));self.skipWaiting()});self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))})`],{type:'text/javascript'}))).catch(()=>{});}
+let t=JSON.parse(localStorage.getItem('cath_v6')||localStorage.getItem('cath_real_app')||'[]'); let currentPhoto='';
+function go(id){document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);if(id=='list')rt();}
+function prepareAuto(){document.getElementById('lk').innerHTML='Title selected: '+document.getElementById('title').value+'<br>Press SUBMIT CHECK to auto-fill!';}
+function doAutoFill(){
+ const v=document.getElementById('title').value; let p='',a='';
+ if(v=='PRINC'){p='601 / PRINC-01';a='TS06'} else if(v=='DP'){p='602 / DP-02';a='TS05'} else if(v=='DAP'){p='602 / DAP-02';a='TS05'} else if(v=='H.T'){p='601 / H.T-01';a='TS06'} else if(v=='S.T'){p='603 / S.T-03';a='TS04'} else if(v=='SSM'){p='603 / SSM-03';a='TS04'} else if(v=='A/T'){p='604 / A/T-04';a='TS01'}
+ document.getElementById('posno').value=p; document.getElementById('abr').value=a;
+ const f=document.getElementById('fileno').value; document.getElementById('status').value=f?'AA':'';
+ document.getElementById('lk').innerHTML=`✅ CHECKED & AUTO-FILLED!<br>🏫 ${document.getElementById('code').value} ${document.getElementById('sname').value}<br>👤 ${v} → ${p} / ${a}<br>📄 FILE ${f} → AA<br>💬 Comments: ${(document.getElementById('comments').value||'none').slice(0,50)}<br>📸 Photo: ${currentPhoto?'Yes uploaded':'No'}<br><b>Now press SAVE OFFLINE!</b>`;
+}
+function loadPhoto(e){
+ const file=e.target.files[0]; if(!file)return; const r=new FileReader(); r.onload=function(ev){currentPhoto=ev.target.result; document.getElementById('preview').src=currentPhoto; document.getElementById('preview').style.display='block'; const p2=document.getElementById('preview2'); if(p2){p2.src=currentPhoto; p2.style.display='block'; document.getElementById('photoInfo').innerHTML='✅ Photo loaded: '+file.name+'<br>Size: '+(file.size/1024).toFixed(1)+'KB<br>Will include in PDF/Excel'; } prepareAuto(); }; r.readAsDataURL(file);
+}
+function sv(){
+ const r={code:document.getElementById('code').value,school:document.getElementById('sname').value,stype:document.getElementById('stype').value,deanery:document.getElementById('deanery').value,title:document.getElementById('title').value,surname:document.getElementById('surname').value,given:document.getElementById('given').value,gen:document.getElementById('gen').value,fileno:document.getElementById('fileno').value,newpos:document.getElementById('newpos').value,posno:document.getElementById('posno').value,abr:document.getElementById('abr').value,status:document.getElementById('status').value,level:document.getElementById('level').value,comments:document.getElementById('comments').value,photo:currentPhoto?'YES - Photo Attached':'No photo',photoData:currentPhoto,savedAt:new Date().toLocaleString()};
+ if(!r.surname||!r.fileno){alert('Put SURNAME and FILE NO!');return;} if(!r.posno){alert('Press SUBMIT CHECK first to auto-fill!');return;}
+ t.push(r);localStorage.setItem('cath_v6',JSON.stringify(t));document.getElementById('cnt').textContent=t.length;document.getElementById('cntHome').textContent=t.length;alert('✅ SAVED! '+r.title+' '+r.surname+'\\nComments saved! Photo: '+(currentPhoto?'Yes':'No')+'\\nTotal: '+t.length);go('home');
+}
+function rt(l=t){const b=document.getElementById('tb');document.getElementById('cnt').textContent=l.length;document.getElementById('cntHome').textContent=l.length;if(l.length==0){b.innerHTML='<tr><td colspan="5" style="text-align:center;padding:20px;color:#94a3b8">No teachers. Tap ADD</td></tr>';return;}b.innerHTML='';l.forEach((x)=>{const tr=document.createElement('tr');tr.innerHTML=`<td><b>${x.title}</b><br><small>${x.stype}</small></td><td><b>${x.surname}</b><br><small>${x.given}<br>${x.photo}</small></td><td>${x.fileno}<br><small>${x.posno}</small></td><td>${x.abr}<br><small>${x.status}</small></td><td><button onclick="dl(${t.indexOf(x)})" style="background:#fee2e2;color:#991b1b;border:none;padding:10px 14px;border-radius:8px;font-weight:bold">X</button></td>`;b.appendChild(tr);});}
+function dl(i){if(confirm('Delete?')){t.splice(i,1);localStorage.setItem('cath_v6',JSON.stringify(t));rt();}}
+function ft(){const q=document.getElementById('qs').value.toLowerCase();if(!q){rt();return;}rt(t.filter(x=>Object.values(x).join(' ').toLowerCase().includes(q)));}
+function ex(){if(t.length==0){alert('No data!');return;}let csv='CODE,SCHOOL,TYPE,TITLE,SURNAME,GIVEN,FILE,POSNO,ABR,STATUS,COMMENTS,PHOTO,SAVED_AT\n';t.forEach(x=>{csv+=`"${x.code}","${x.school}","${x.stype}","${x.title}","${x.surname}","${x.given}","${x.fileno}","${x.posno}","${x.abr}","${x.status}","${(x.comments||'').replace(/"/g,'') }","${x.photo}","${x.savedAt}"\n`;});const b=new Blob([csv],{type:'text/csv'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='Catholic_Agency_PNG_'+new Date().toISOString().slice(0,10)+'.csv';a.click();alert('📊 Excel CSV exported! '+t.length+' teachers with photo info!');}
+function exportPDF(){
+ if(t.length==0){alert('No data to PDF! Add teacher first!');return;}
+ let html=`<html><head><title>Catholic Schools PNG - PDF</title><style>body{font-family:Arial;padding:20px}h1{background:#0a1f4a;color:#fff;padding:12px;border-radius:8px}table{width:100%;border-collapse:collapse;font-size:11px}th{background:#0a1f4a;color:#fff;padding:8px}td{padding:7px;border:1px solid #ccc}img{max-width:120px;max-height:120px;border-radius:6px}.header{display:flex;justify-content:space-between}</style></head><body><h1>✝️ Catholic Agency Schools PNG - Teacher Report</h1><p>Generated: ${new Date().toLocaleString()} | Total: ${t.length} teachers | CODE 66-410 | Includes Photos & Comments</p><table><tr><th>Photo</th><th>Title</th><th>Name</th><th>School/Type</th><th>File/POS/ABR/Status</th><th>Comments</th></tr>`;
+ t.forEach(x=>{html+=`<tr><td>${x.photoData?`<img src="${x.photoData}">`:'No photo'}</td><td><b>${x.title}</b></td><td>${x.surname} ${x.given}<br><small>${x.gen}</small></td><td>${x.school}<br><small>${x.stype} | ${x.deanery}</small></td><td>${x.fileno}<br>${x.posno}<br>${x.abr} | ${x.status}</td><td>${x.comments||'-'}</td></tr>`;});
+ html+=`</table><br><p>© Kavieng Diocese • Catholic Agency • Help vulnerable remote PNG • Offline Real App v6</p><script>window.print()<\/script></body></html>`;
+ const w=window.open('','_blank');w.document.write(html);w.document.close();
+}
+prepareAuto();rt();
+</script></body></html>
