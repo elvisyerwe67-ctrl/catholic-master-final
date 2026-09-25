@@ -1,39 +1,111 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Catholic Offline PNG</title><meta name="theme-color" content="#0a1f4a"><link rel="manifest" href='data:application/json;base64,eyJuYW1lIjoiQ2F0aG9saWMgT2ZmbGluZSBQTkciLCJzaG9ydF9uYW1lIjoiQ2F0aG9saWMgUE5HIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzBhMWY0YSIsInRoZW1lX2NvbG9yIjoiIzBhMWY0YSIsImljb25zIjpbXX0='><style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial;background:#eef3fb}
-.h{background:#0a1f4a;color:#fff;padding:10px;display:flex;gap:8px;align-items:center;border-bottom:3px solid #d4af37;position:sticky;top:0}
-.tabs{display:flex;gap:4px;padding:6px;background:#c8d9f0;overflow-x:auto}
-.t{padding:5px 9px;border-radius:12px;color:#fff;font-weight:bold;font-size:9px;white-space:nowrap}
-.m{display:flex;gap:8px;padding:8px;flex-wrap:wrap}
-.n{width:220px;background:#0a1931;border-radius:10px;padding:10px;color:#fff;font-size:10px}
-.c{flex:1;min-width:280px;background:#fff;border-radius:10px;padding:10px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-.g{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-input,select,textarea{width:100%;padding:6px;border:1.5px solid #1565c0;border-radius:5px;font-weight:bold;font-size:11px}
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Catholic PNG - Computer + Phone</title><meta name="theme-color" content="#0a1f4a"><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#eef3fb;color:#0f172a}
+.h{background:#0a1f4a;color:#fff;padding:12px 16px;display:flex;gap:10px;align-items:center;border-bottom:4px solid #d4af37;position:sticky;top:0;z-index:9}
+.tabs{display:flex;gap:5px;padding:8px;background:#c8d9f0;overflow-x:auto;border-bottom:2px solid #0a1f4a}
+.t{padding:6px 12px;border-radius:20px;color:#fff;font-weight:bold;font-size:10px;white-space:nowrap}
+.wrap{display:flex;gap:12px;padding:12px;max-width:1600px;margin:0 auto}
+.side{width:280px;background:#0a1931;border-radius:14px;padding:14px;color:#fff;flex-shrink:0}
+.main{flex:1;min-width:300px;background:#fff;border-radius:14px;padding:14px;box-shadow:0 4px 12px rgba(0,0,0,.08);border:1px solid #cbd5e1}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+input,select,textarea{width:100%;padding:8px;border:2px solid #1565c0;border-radius:7px;font-weight:bold;font-size:12px}
 .ib{background:#dbeafe}.ig{background:#dcfce7}.iy{background:#fef9c3}
-.btn{padding:6px 9px;border-radius:5px;border:1px solid #0a1f4a;background:#fff;font-weight:bold;font-size:10px;margin:2px}
-table{width:100%;border-collapse:collapse;font-size:9px;background:#fff}th{background:#0a1f4a;color:#fff;padding:5px}td{padding:4px;border:1px solid #ddd}
-.off{background:#16a34a;color:#fff;padding:2px 6px;border-radius:8px;font-size:8px}
+.btn{padding:8px 12px;border-radius:7px;border:1.5px solid #0a1f4a;background:#fff;font-weight:bold;font-size:11px;margin:3px;cursor:pointer}
+.btn:hover{opacity:.9}
+table{width:100%;border-collapse:collapse;font-size:11px;background:#fff}th{background:#0a1f4a;color:#fff;padding:8px;text-align:left;position:sticky;top:0}td{padding:7px;border:1px solid #e2e8f0}
+.badge{background:#16a34a;color:#fff;padding:3px 8px;border-radius:10px;font-size:9px}
+.block{border-radius:10px;padding:12px;margin-bottom:12px}
+.b1{background:#f8fafc;border-left:5px solid #1565c0}
+.b2{background:#f0fdf4;border-left:5px solid #16a34a}
+.b3{background:#fefce8;border-left:5px solid #eab308}
+/* COMPUTER WIDE VIEW */
+@media(min-width:1024px){
+ .grid{grid-template-columns:1fr 1fr 1fr}
+ .wrap{padding:20px}
+ .side{width:320px;position:sticky;top:80px;height:fit-content}
+ .main{padding:20px}
+  table{font-size:12px}
+ .h{padding:16px 24px}
+ .h b{font-size:18px}
+}
+/* PHONE SMALL */
+@media(max-width:768px){
+ .wrap{flex-direction:column}
+ .side{width:100%}
+ .grid,.grid3{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+ .grid,.grid3{grid-template-columns:1fr}
+}
+@media print{.h,.tabs,.side,.btn{display:none}.main{box-shadow:none;border:none}}
 </style></head><body>
-<div class="h"><div style="font-size:22px">✝️</div><div><b>CATHOLIC PNG OFFLINE</b> <span class="off">● OFFLINE READY</span><br><small style="font-size:9px">CODE 66-410 AMFAR PRIMARY • Works in bush, no internet • Help vulnerable people</small></div></div>
-<div class="tabs"><div class="t" style="background:#1565c0">S1 MASTER_Z20 🔒 20 COLS</div><div class="t" style="background:#16a34a">S2 PRIMARY ✏️ EDIT</div><div class="t" style="background:#7c3aed">S3-6 SCHOOLS 🔒</div><div class="t" style="background:#ec4899">S7-9 DEANERIES 🔒</div><div class="t" style="background:#f59e0b;color:#000">S10 TRANSFER 🔄</div><div class="t" style="background:#06b6d4">S11 PARISHES ⛪</div></div>
-<div class="m"><div class="n"><b>☰ OFFLINE MODE PNG 🇵🇬</b><br><small>For remote officers helping hopeless & vulnerable</small><br><br><div style="background:#1565c0;padding:7px;border-radius:7px">🏫 S1 CODE 66-410<br><small>LOCKED ⛓️ 20 COLS</small></div><div style="background:#132a54;padding:7px;border-radius:7px;margin-top:5px">👤 S2 DAULAI Wilfred M<br><small>FILE 01368920 TS06 AA</small></div><div style="background:#1e3a5f;padding:7px;border-radius:7px;margin-top:5px;font-size:9px"><b>✅ OFFLINE FEATURES:</b><br>• No internet needed<br>• Saves in phone<br>• Add to Home Screen<br>• Works in remote PNG<br>• Export when in town<br>• Help vulnerable people<br><br><b>HOW TO INSTALL AS APP:</b><br>1. Chrome → ⋮ menu<br>2. Add to Home Screen<br>3. Now icon on phone<br>4. Open like real app<br>5. Works offline! ✝️</div></div><div class="c"><b>Enter Teacher Data <span id="cnt" style="float:right;background:#dcfce7;color:#166534;padding:2px 6px;border-radius:8px;font-size:9px">0 Saved Offline</span></b><br><br>
-<div style="background:#f8fafc;border-radius:7px;padding:8px;border-left:3px solid #1565c0"><b>🏫 Block 1 • School Profile 🔗</b><div class="g" style="margin-top:5px"><div><small>CODE</small><input class="ib" id="code" value="66-410"></div><div><small>SCHOOL</small><input class="ib" id="sname" value="AMFAR PRIMARY"></div><div><small>NEW POS</small><input class="ib" id="newpos" value="1090125726"></div><div><small>TYPE</small><select class="ib" id="type"><option>PRIMARY SCHOOL</option><option>Elementary</option><option>Junior High</option></select></div><div><small>DEANERY</small><input class="ib" id="deanery" value="KAVIENG DEANERY"></div><div><small>PARISH</small><input class="ib" id="parish" value="ST FRANCIS XAVIER"></div></div></div>
-<div style="background:#f0fdf4;border-radius:7px;padding:8px;border-left:3px solid #16a34a;margin-top:8px"><b>👤 Block 2 • Personal ✏️ Green</b><div class="g" style="margin-top:5px"><div><small>TITLE→POS ABR</small><select id="title" onchange="lk()" class="ig"><option>HT</option><option>DHT</option><option>SST</option><option>T</option></select></div><div><small>SURNAME</small><input class="ig" id="surname" value="DAULAI"></div><div><small>GIVEN</small><input class="ig" id="given" value="Wilfred M"></div><div><small>GEN</small><select class="ig" id="gen"><option>M</option><option>F</option></select></div><div><small>FILE NO</small><input class="ig" id="fileno" value="01368920"></div><div><small>TITLE FULL</small><input class="ig" id="titlefull" value="HT - Head Teacher"></div></div></div>
-<div style="background:#fefce8;border-radius:7px;padding:8px;border-left:3px solid #eab308;margin-top:8px"><b>📄 Block 3 • A/AUTH 🔗</b><div class="g" style="margin-top:5px"><div><small>POS NO</small><input class="iy" id="posno" value="601 / HT-01"></div><div><small>ABR</small><input class="iy" id="abr" value="TS06"></div><div><small>STATUS</small><input class="iy" id="status" value="AA"></div><div><small>AUTH</small><input class="iy" id="auth" value="Diocese Mission"></div></div><div id="lk" style="margin-top:5px;background:#dcfce7;border:1px solid #16a34a;padding:4px;border-radius:5px;font-size:9px;font-weight:bold">🔗 66-410 | AMFAR PRIMARY → HT → 601 / TS06 | FILE 01368920 → AA ✅ OFFLINE</div></div>
-<div style="margin-top:8px"><button class="btn" style="background:#0a1f4a;color:#fff" onclick="sr()">🔍 Search</button><button class="btn" onclick="cf()">🧹 Clear</button><button class="btn" style="background:#16a34a;color:#fff" onclick="sv()">✅ SAVE OFFLINE!</button><button class="btn" style="background:#0ea5e9;color:#fff" onclick="ex()">📊 Export CSV</button><button class="btn" style="background:#fee2e2;color:#991b1b" onclick="ca()">🗑️ Clear All</button></div>
-<div style="margin-top:8px;border:1px solid #0a1f4a;border-radius:7px;overflow:hidden"><div style="padding:6px;background:#f1f5f9;display:flex;justify-content:space-between"><b style="font-size:10px">📋 OFFLINE SAVED LIST - Check here! No internet needed 👇</b><input id="qs" placeholder="Search..." style="padding:3px 6px;border-radius:5px;border:1px solid #ccc;font-size:9px;width:80px" oninput="ft()"></div><div style="overflow-x:auto"><table><thead><tr><th>CODE</th><th>SCHOOL</th><th>SURNAME</th><th>GIVEN</th><th>FILE</th><th>ABR</th><th>POS</th><th>STATUS</th><th>X</th></tr></thead><tbody id="tb"><tr><td colspan="9" style="text-align:center;color:#999;padding:10px">No data yet. Works offline! Save teacher above.</td></tr></tbody></table></div><div style="font-size:8px;color:#666;padding:5px;background:#f8fafc">🇵🇬 OFFLINE PNG • Phone storage • No internet • For remote officers helping hopeless & vulnerable • Add to Home Screen to install as app</div></div>
-</div></div><div style="text-align:center;font-size:8px;padding:6px;color:#64748b">© Kavieng Diocese OFFLINE PNG • CODE 66-410 AMFAR PRIMARY • HT DAULAI Wilfred M FILE 01368920 TS06 AA 601 • Help hopeless & vulnerable in remote PNG • Offline PWA v3.0</div>
+<div class="h"><div style="font-size:28px">✝️</div><div><b>CATHOLIC PNG OFFLINE SYSTEM — COMPUTER + PHONE</b> <span class="badge">● OFFLINE READY</span><br><small>CODE 66-410 AMFAR PRIMARY • Works on PC, Laptop, Phone, Tablet • For remote officers helping vulnerable people 🇵🇬</small></div></div>
+<div class="tabs"><div class="t" style="background:#1565c0">S1 MASTER_Z20 🔒 20 COLUMNS</div><div class="t" style="background:#16a34a">S2 PRIMARY ✏️ EDITABLE</div><div class="t" style="background:#7c3aed">S3-6 SCHOOLS 🔒 LINKED</div><div class="t" style="background:#ec4899">S7-9 DEANERIES 🔒 3 AREAS</div><div class="t" style="background:#f59e0b;color:#000">S10 TRANSFER 🔄 AUTO</div><div class="t" style="background:#06b6d4">S11 PARISHES ⛪ LINKED</div><div class="t" style="background:#0a1f4a">S12 DATA 📊 EXPORT</div></div>
+
+<div class="wrap">
+<div class="side">
+<b>☰ NAVIGATION</b><br><small>Offline PNG System v4.0</small><br><br>
+<div style="background:#1565c0;padding:10px;border-radius:10px">🏫 <b>S1 School Profile</b><br><small>CODE 66-410 LOCKED ⛓️<br>20 COLS ALL LINKED</small></div>
+<div style="background:#16a34a;padding:10px;border-radius:10px;margin-top:8px">👤 <b>S2 Personal Info</b><br><small>DAULAI Wilfred M ✏️<br>FILE 01368920 TS06 AA</small></div>
+<div style="background:#1e293b;padding:10px;border-radius:10px;margin-top:8px;font-size:10px">
+<b>💻 COMPUTER + 📱 PHONE</b><br>
+• Wide on PC, small on phone<br>
+• Works offline both!<br>
+• No internet in bush OK<br>
+• Save to device<br>
+• Export CSV for office<br><br>
+<b>🇵🇬 FOR PNG REMOTE:</b><br>
+Officers help hopeless &<br>vulnerable even no signal!<br><br>
+<b>HOW TO INSTALL:</b><br>
+<b>Phone:</b> Chrome ⋮ → Add to Home Screen<br>
+<b>PC:</b> Chrome ⋮ → Install app<br>
+Now icon like real app!
+</div>
+<div style="margin-top:10px;background:#0f172a;padding:8px;border-radius:8px;text-align:center;font-size:9px">KAVIENG DIOCESE<br>CODE 66-410 AMFAR PRIMARY<br>DAULAI Wilfred M<br>HT - Head Teacher<br>TS06 | 601 | AA</div>
+</div>
+
+<div class="main">
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px"><h2 style="margin:0;font-size:18px">📝 School Record — Details Entry</h2><span id="cnt" style="background:#dcfce7;color:#166534;padding:5px 12px;border-radius:20px;font-weight:bold;font-size:12px">0 Saved Offline</span></div>
+<small style="color:#64748b">For officers in remote places — help vulnerable people — works offline</small>
+<br><br>
+
+<div class="block b1"><b>🏫 Block 1 • School Profile 🔗 BLUE LOCKED</b><div class="grid" style="margin-top:10px"><div><small>CODE 🔗 20 COLS</small><input class="ib" id="code" value="66-410"></div><div><small>SCHOOL NAME 🔗</small><input class="ib" id="sname" value="AMFAR PRIMARY"></div><div><small>NEW POSITION NO</small><input class="ib" id="newpos" value="1090125726"></div><div><small>SCHOOL TYPE</small><select class="ib" id="type"><option>PRIMARY SCHOOL</option><option>Elementary</option><option>Junior High</option><option>Secondary</option><option>TVET</option></select></div><div><small>DEANERY</small><input class="ib" id="deanery" value="KAVIENG DEANERY"></div><div><small>PARISH</small><input class="ib" id="parish" value="ST FRANCIS XAVIER PARISH"></div></div></div>
+
+<div class="block b2"><b>👤 Block 2 • Personal Info ✏️ GREEN EDITABLE</b><div class="grid3" style="margin-top:10px"><div><small>TITLE → AUTO POS & ABR ⛓️</small><select id="title" onchange="lk()" class="ig"><option>HT</option><option>DHT</option><option>SST</option><option>T</option><option>EL T</option></select></div><div><small>SURNAME</small><input class="ig" id="surname" value="DAULAI"></div><div><small>GIVEN NAME</small><input class="ig" id="given" value="Wilfred M"></div><div><small>GENDER M/F</small><select class="ig" id="gen"><option>M - Male</option><option>F - Female</option></select></div><div><small>FILE NO → STATUS</small><input class="ig" id="fileno" value="01368920"></div><div><small>TITLE FULL</small><input class="ig" id="titlefull" value="HT - Head Teacher"></div></div></div>
+
+<div class="block b3"><b>📄 Block 3 • A/AUTH-DEC 🔗 YELLOW AUTO LINKED</b><div class="grid3" style="margin-top:10px"><div><small>POSITION NO ← TITLE</small><input class="iy" id="posno" value="601 / HT-01"></div><div><small>ABR ← TITLE</small><input class="iy" id="abr" value="TS06"></div><div><small>STATUS ← FILE NO</small><input class="iy" id="status" value="AA"></div><div><small>AUTHORITY</small><input class="iy" id="auth" value="Diocese Catholic Mission"></div><div><small>DATE</small><input class="iy" id="date" type="date" value="2024-03-15"></div><div><small>LEVEL</small><input class="iy" id="level" value="PRIMARY"></div></div><div id="lk" style="margin-top:10px;background:#dcfce7;border:2px solid #16a34a;padding:8px;border-radius:8px;font-weight:bold;font-size:11px">🔗 66-410 | AMFAR PRIMARY → HT → 601 / HT-01 / TS06 | FILE 01368920 → AA ✅ OFFLINE READY 💻📱</div></div>
+
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:10px">
+<button class="btn" style="background:#0a1f4a;color:#fff" onclick="sr()">🔍 Search</button>
+<button class="btn" onclick="cf()">🧹 Clear Form</button>
+<button class="btn" style="background:#16a34a;color:#fff" onclick="sv()">✅ SAVE OFFLINE - REAL!</button>
+<button class="btn" style="background:#0ea5e9;color:#fff" onclick="ex()">📊 Export Excel CSV</button>
+<button class="btn" style="background:#f1f5f9" onclick="window.print()">🖨️ Print (PC)</button>
+<button class="btn" style="background:#fee2e2;color:#991b1b" onclick="ca()">🗑️ Clear All Saved</button>
+</div>
+
+<div style="margin-top:14px;border:2px solid #0a1f4a;border-radius:12px;overflow:hidden">
+<div style="padding:10px 14px;background:#f1f5f9;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px"><b>📋 SAVED TEACHERS LIST - Offline Check Here! Works on PC + Phone 👇</b><input id="qs" placeholder="🔍 Search surname, file no..." style="padding:6px 12px;border-radius:20px;border:1.5px solid #94a3b8;font-size:11px;width:200px" oninput="ft()"></div>
+<div style="overflow-x:auto;max-height:400px"><table><thead><tr><th>CODE</th><th>SCHOOL</th><th>TITLE</th><th>SURNAME</th><th>GIVEN NAME</th><th>FILE NO</th><th>ABR</th><th>POS NO</th><th>STATUS</th><th>DEANERY</th><th>ACTION</th></tr></thead><tbody id="tb"><tr><td colspan="11" style="text-align:center;color:#94a3b8;padding:20px">No teachers saved yet. Enter data above and tap SAVE OFFLINE.<br><small>Works on computer + phone, no internet needed</small></td></tr></tbody></table></div>
+<div style="font-size:9px;color:#64748b;padding:8px;background:#f8fafc;display:flex;justify-content:space-between"><span>🇵🇬 PNG OFFLINE • Phone LocalStorage • Works in bush • Help vulnerable</span><span>💻 PC Wide View + 📱 Phone Small View • Responsive Professional</span></div>
+</div>
+
+</div>
+</div>
+
+<div style="text-align:center;font-size:10px;padding:12px;color:#64748b;background:#fff;border-top:1px solid #e2e8f0">© Kavieng Diocese • CODE 66-410 AMFAR PRIMARY • HT DAULAI Wilfred M FILE 01368920 TS06 AA 601 • Help hopeless & vulnerable in remote PNG • Computer + Phone Offline PWA v4.0 • 12 Sheets Linked • Works Everywhere 💻📱</div>
+
 <script>
-// Offline PWA - Service Worker
-if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob([`self.addEventListener('install',e=>{e.waitUntil(caches.open('cath-png-v3').then(c=>c.addAll(['./'])));self.skipWaiting()});self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).catch(()=>caches.match('./'))))})`],{type:'text/javascript'})).then(()=>console.log('Offline ready for PNG bush!')).catch(()=>{}));}
-let t=JSON.parse(localStorage.getItem('cath_offline_png')||localStorage.getItem('cath_pro')||'[]');
-function lk(){const v=document.getElementById('title').value;const p={"HT":"601 / HT-01","DHT":"602 / DHT-02","SST":"603 / SST-03","T":"604 / T-04"};const a={"HT":"TS06","DHT":"TS05","SST":"TS04","T":"TS01"};document.getElementById('posno').value=p[v]||"601 / HT-01";document.getElementById('abr').value=a[v]||"TS06";const f=document.getElementById('fileno').value;document.getElementById('status').value=f?"AA":"";document.getElementById('lk').innerHTML="🔗 "+document.getElementById('code').value+" | "+document.getElementById('sname').value+" → "+v+" → "+p[v]+" / "+a[v]+" | FILE "+f+" → AA ✅ OFFLINE READY";}
-function sv(){const r={code:document.getElementById('code').value,school:document.getElementById('sname').value,newpos:document.getElementById('newpos').value,type:document.getElementById('type').value,deanery:document.getElementById('deanery').value,parish:document.getElementById('parish').value,title:document.getElementById('title').value,surname:document.getElementById('surname').value,given:document.getElementById('given').value,gen:document.getElementById('gen').value,fileno:document.getElementById('fileno').value,titlefull:document.getElementById('titlefull').value,posno:document.getElementById('posno').value,abr:document.getElementById('abr').value,status:document.getElementById('status').value,auth:document.getElementById('auth').value,savedAt:new Date().toLocaleString()};if(!r.surname||!r.fileno){alert('Enter surname & file no!');return;}t.push(r);localStorage.setItem('cath_offline_png',JSON.stringify(t));rt();alert('✅ SAVED OFFLINE! '+r.surname+' '+r.fileno+' Total: '+t.length+'\\nWorks in bush, no internet needed! 🇵🇬');}
-function rt(l=t){const b=document.getElementById('tb');document.getElementById('cnt').textContent=l.length+' Saved Offline';if(l.length==0){b.innerHTML='<tr><td colspan="9" style="text-align:center;color:#999;padding:10px">No data yet. Works offline! Save teacher above.</td></tr>';return;}b.innerHTML='';l.forEach((x,i)=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${x.code}</td><td>${x.school}</td><td><b>${x.surname}</b></td><td>${x.given}</td><td>${x.fileno}</td><td>${x.abr}</td><td>${x.posno}</td><td>${x.status}</td><td><button onclick="dl(${t.indexOf(x)})" style="background:#fee2e2;color:#991b1b;border:none;padding:2px 5px;border-radius:4px">X</button></td>`;b.appendChild(tr);});}
-function dl(i){if(confirm('Delete?')){t.splice(i,1);localStorage.setItem('cath_offline_png',JSON.stringify(t));rt();}}
+if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob([`self.addEventListener('install',e=>{e.waitUntil(caches.open('cath-png-v4').then(c=>c.addAll(['./'])));self.skipWaiting()});self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).catch(()=>caches.match('./'))))})`],{type:'text/javascript'})).then(()=>console.log('PNG Offline ready - PC + Phone')).catch(()=>{}));}
+let t=JSON.parse(localStorage.getItem('cath_offline_png')||localStorage.getItem('cath_pro')||localStorage.getItem('catholic_teachers')||'[]');
+function lk(){const v=document.getElementById('title').value;const p={"HT":"601 / HT-01","DHT":"602 / DHT-02","SST":"603 / SST-03","T":"604 / T-04","EL T":"605 / EL-05"};const a={"HT":"TS06","DHT":"TS05","SST":"TS04","T":"TS01","EL T":"TS01"};document.getElementById('posno').value=p[v]||"601 / HT-01";document.getElementById('abr').value=a[v]||"TS06";const f=document.getElementById('fileno').value;document.getElementById('status').value=f?"AA":"";document.getElementById('lk').innerHTML="🔗 "+document.getElementById('code').value+" | "+document.getElementById('sname').value+" → "+v+" → "+(p[v]||"601")+" / "+(a[v]||"TS06")+" | FILE "+f+" → AA ✅ OFFLINE READY 💻📱 PC Wide + Phone Small";}
+function sv(){const r={code:document.getElementById('code').value,school:document.getElementById('sname').value,newpos:document.getElementById('newpos').value,type:document.getElementById('type').value,deanery:document.getElementById('deanery').value,parish:document.getElementById('parish').value,title:document.getElementById('title').value,surname:document.getElementById('surname').value,given:document.getElementById('given').value,gen:document.getElementById('gen').value,fileno:document.getElementById('fileno').value,titlefull:document.getElementById('titlefull').value,posno:document.getElementById('posno').value,abr:document.getElementById('abr').value,status:document.getElementById('status').value,auth:document.getElementById('auth').value,date:document.getElementById('date').value,level:document.getElementById('level').value,savedAt:new Date().toLocaleString()};if(!r.surname||!r.fileno){alert('Please enter SURNAME and FILE NO!');return;}t.push(r);localStorage.setItem('cath_offline_png',JSON.stringify(t));rt();alert('✅ SAVED OFFLINE! '+r.surname+' '+r.given+' FILE '+r.fileno+'\\nTotal: '+t.length+' teachers saved!\\nWorks on PC + Phone, no internet needed! 🇵🇬');}
+function rt(l=t){const b=document.getElementById('tb');document.getElementById('cnt').textContent=l.length+' Saved Offline';if(l.length==0){b.innerHTML='<tr><td colspan="11" style="text-align:center;color:#94a3b8;padding:20px">No teachers saved yet. Enter data above and tap SAVE OFFLINE.<br><small>Works on computer + phone, no internet needed</small></td></tr>';return;}b.innerHTML='';l.forEach((x)=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${x.code}</td><td>${x.school}</td><td>${x.title}</td><td><b>${x.surname}</b></td><td>${x.given}</td><td>${x.fileno}</td><td>${x.abr}</td><td>${x.posno}</td><td>${x.status}</td><td>${x.deanery}</td><td><button onclick="dl(${t.indexOf(x)})" style="background:#fee2e2;color:#991b1b;border:none;padding:3px 8px;border-radius:5px;font-weight:bold">X</button></td>`;b.appendChild(tr);});}
+function dl(i){if(confirm('Delete this teacher?')){t.splice(i,1);localStorage.setItem('cath_offline_png',JSON.stringify(t));rt();}}
 function ft(){const q=document.getElementById('qs').value.toLowerCase();if(!q){rt();return;}rt(t.filter(x=>Object.values(x).join(' ').toLowerCase().includes(q)));}
 function cf(){document.getElementById('surname').value='';document.getElementById('given').value='';document.getElementById('fileno').value='';}
-function ca(){if(confirm('Clear ALL '+t.length+'?')){t=[];localStorage.removeItem('cath_offline_png');rt();}}
-function ex(){if(t.length==0){alert('No data! Save first!');return;}let csv='CODE,SCHOOL,SURNAME,GIVEN,FILENO,ABR,POSNO,STATUS,DEANERY,PARISH,SAVED_AT\n';t.forEach(x=>{csv+=`"${x.code}","${x.school}","${x.surname}","${x.given}","${x.fileno}","${x.abr}","${x.posno}","${x.status}","${x.deanery}","${x.parish}","${x.savedAt}"\n`;});const b=new Blob([csv],{type:'text/csv'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='Catholic_Offline_PNG_'+new Date().toISOString().slice(0,10)+'.csv';a.click();alert('📊 Exported '+t.length+' teachers! When you reach town with internet, send CSV to office. Offline work saved! 🇵🇬');}
-function sr(){const q=prompt('Search surname/file:');if(!q)return;document.getElementById('qs').value=q;ft();}
+function ca(){if(confirm('Clear ALL '+t.length+' saved teachers? This deletes offline data!')){t=[];localStorage.removeItem('cath_offline_png');rt();}}
+function ex(){if(t.length==0){alert('No data to export! Save teachers first!');return;}let csv='CODE,SCHOOL,NEWPOS,TYPE,DEANERY,PARISH,TITLE,SURNAME,GIVEN,GEN,FILENO,TITLEFULL,POSNO,ABR,STATUS,AUTHORITY,DATE,LEVEL,SAVED_AT\n';t.forEach(x=>{csv+=`"${x.code}","${x.school}","${x.newpos}","${x.type}","${x.deanery}","${x.parish}","${x.title}","${x.surname}","${x.given}","${x.gen}","${x.fileno}","${x.titlefull}","${x.posno}","${x.abr}","${x.status}","${x.auth}","${x.date}","${x.level}","${x.savedAt}"\n`;});const b=new Blob([csv],{type:'text/csv'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='Catholic_PNG_Offline_PC_Phone_'+new Date().toISOString().slice(0,10)+'.csv';a.click();alert('📊 CSV Exported! '+t.length+' teachers!\\nPC: Check Downloads folder\\nPhone: Check My Files → Downloads\\nSend to office when you have internet! 🇵🇬');}
+function sr(){const q=prompt('Search surname or file no:');if(!q)return;document.getElementById('qs').value=q;ft();}
 lk();rt();
 </script></body></html>
